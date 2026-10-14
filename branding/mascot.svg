@@ -1,45 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520">
-  <!-- Vitrum mascot v2 — Raiden's design on a wave, 2026-10-14 -->
-  <!-- wave back -->
-  <path d="M20,400 C100,340 170,330 250,350 C330,370 400,340 460,380 L460,520 L20,520 Z" fill="#17817F"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560">
+  <!-- Vitrum mascot v3 — cleaned-up vector, Raiden's design, 2026-10-14 -->
+  <!-- sun -->
+  <circle cx="402" cy="66" r="32" fill="#FCD34D"/>
+  <!-- back wave -->
+  <path d="M0,470 C70,430 140,420 210,432 C290,446 360,420 480,455 L480,560 L0,560 Z" fill="#0D9488"/>
   <!-- foam crest -->
-  <g fill="#FFFFFF" opacity="0.92">
-    <circle cx="80" cy="398" r="14"/>
-    <circle cx="132" cy="382" r="10"/>
-    <circle cx="200" cy="380" r="12"/>
-    <circle cx="272" cy="386" r="14"/>
-    <circle cx="342" cy="376" r="10"/>
-    <circle cx="412" cy="392" r="12"/>
-  </g>
-  <!-- wave front -->
-  <path d="M20,432 C110,382 200,376 290,396 C360,411 410,396 460,421 L460,520 L20,520 Z" fill="#2BB5A0"/>
+  <path d="M0,470 C70,430 140,420 210,432 C290,446 360,420 480,455" stroke="#FFFFFF" stroke-width="24" fill="none" stroke-linecap="round"/>
+  <!-- front wave -->
+  <path d="M0,498 C80,468 170,462 250,474 C330,486 400,468 480,492 L480,560 L0,560 Z" fill="#2DD4BF" opacity="0.9"/>
   <!-- surfboard -->
-  <polygon points="110,432 372,410 360,450 100,470" fill="#2FA84F"/>
-  <!-- foam around board -->
-  <g fill="#FFFFFF" opacity="0.85">
-    <ellipse cx="120" cy="452" rx="20" ry="8"/>
-    <ellipse cx="360" cy="432" rx="22" ry="8"/>
+  <g transform="rotate(-4 240 445)">
+    <rect x="110" y="432" width="260" height="26" rx="13" fill="#22C55E"/>
   </g>
   <!-- legs -->
-  <rect x="200" y="360" width="26" height="48" fill="#FFD21F"/>
-  <rect x="250" y="360" width="26" height="48" fill="#FFD21F"/>
+  <rect x="214" y="368" width="24" height="62" fill="#FFD21F"/>
+  <rect x="258" y="368" width="24" height="62" fill="#FFD21F"/>
   <!-- swim trunks -->
-  <rect x="176" y="282" width="124" height="84" rx="26" fill="#F68B1F"/>
+  <rect x="183" y="300" width="114" height="78" rx="24" fill="#F68B1F"/>
   <!-- V outline -->
-  <g stroke="#161616" stroke-width="46" stroke-linecap="round" fill="none">
-    <path d="M188,78 L248,306"/>
-    <path d="M308,78 L248,306"/>
+  <g stroke="#161616" stroke-width="44" stroke-linecap="round" fill="none">
+    <path d="M197,75 L252,335"/>
+    <path d="M297,75 L252,335"/>
   </g>
   <!-- V -->
-  <g stroke="#FFD21F" stroke-width="42" stroke-linecap="round" fill="none">
-    <path d="M180,72 L240,300"/>
-    <path d="M300,72 L240,300"/>
+  <g stroke="#FFD21F" stroke-width="40" stroke-linecap="round" fill="none">
+    <path d="M190,70 L245,330"/>
+    <path d="M290,70 L245,330"/>
   </g>
   <!-- arms -->
-  <path d="M198,200 q-26,12 -48,-4 q-12,-10 -26,-4" stroke="#161616" stroke-width="5" fill="none" stroke-linecap="round"/>
-  <path d="M282,200 q26,12 48,-4 q12,-10 26,-4" stroke="#161616" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M202,210 q-24,10 -44,-2 q-12,-8 -24,-2" stroke="#161616" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M278,210 q24,10 44,-2 q12,-8 24,-2" stroke="#161616" stroke-width="5" fill="none" stroke-linecap="round"/>
   <!-- sunglasses -->
-  <ellipse cx="200" cy="122" rx="42" ry="30" fill="#111111"/>
-  <ellipse cx="284" cy="122" rx="42" ry="30" fill="#111111"/>
-  <rect x="238" y="114" width="12" height="14" fill="#111111"/>
+  <ellipse cx="203" cy="130" rx="40" ry="28" fill="#111111"/>
+  <ellipse cx="277" cy="130" rx="40" ry="28" fill="#111111"/>
+  <rect x="239" y="122" width="10" height="14" fill="#111111"/>
 </svg>

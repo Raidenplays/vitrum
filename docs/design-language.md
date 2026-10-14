@@ -17,7 +17,8 @@ answered in design sessions, then locked in.
 - **Light — 2000s beach core.** Sunny days, calm water, surfing. Frutiger
   Aero's home turf: aqua glass, optimism, Y2K shine.
 - [OPEN] Exact palette per theme — locked in at mockup stage.
-- [OPEN] Accent color system: single accent vs per-app accents?
+- [OPEN] Accent color system → **DECIDED (2026-10-14): one system accent**
+  across the whole OS.
 
 ## 3. Glass
 
@@ -55,8 +56,10 @@ final call still pending.
   into a tabbed group. Our signature window-management move.
 - [OPEN] Title bar text style: glowing text on glass?
 - [OPEN] Aero Snap: keep drag-to-edge behavior?
-- [OPEN] Window overview / exposé equivalent: our take?
-- [OPEN] Alt+Tab switcher style.
+- [OPEN] Window overview → **DECIDED (2026-10-14): 3D flip-through**
+  (Flip 3D-style). Pure Aero nostalgia.
+- [OPEN] Alt+Tab switcher → **DECIDED (2026-10-14): glass card strip.**
+  Quick and readable; the 3D flip stays reserved for the full overview.
 
 ## 6. Signature elements
 
@@ -78,7 +81,9 @@ final call still pending.
 - **Icon style: glossy 3D, Vista-level richness** — DECIDED (2026-10-14).
   Detailed, dimensional, unapologetically glossy. As crazy as Vista's icons
   were. Original set, drawn for Vitrum.
-- [OPEN] Font pairing: UI font and monospace. (No Segoe UI — original choices only.)
+- **Font pairing: rounded and friendly** — DECIDED (2026-10-14).
+  UI font in the Nunito/Quicksand spirit (exact pick at implementation);
+  monospace to match. No Segoe UI — original choices only.
 
 ## 8. Motion
 
@@ -90,9 +95,13 @@ final call still pending.
 
 ## 9. Apps (forked, restyled)
 
-- Priority order: file manager, terminal, text editor, image viewer, settings.
-- Fork candidates to evaluate per app.
-- How deep does restyling go: theme-only, or layout changes too?
+- **Priority order** — DECIDED (2026-10-14): **System Settings first.**
+  It's the design-language showcase — every toggle, slider, and panel shows
+  off the theme. Then file manager, terminal, text editor.
+- [OPEN] Fork candidates to evaluate per app.
+- [OPEN] How deep does restyling go → **DECIDED (2026-10-14): full
+  layout rethink.** Not just a theme — forked apps get reimagined layouts
+  in the Vitrum language.
 
 ## Decisions log
 
@@ -110,4 +119,10 @@ final call still pending.
 | 2026-10-14 | Login screen = XP welcome layout, aero'ified (glass user tiles). |
 | 2026-10-14 | Tray & clock live in the sidebar widgets. |
 | 2026-10-14 | 3-second test: "ours actually looks good" — craft as differentiator. |
-| 2026-10-14 | Mascot: glass V with sunglasses + swim trunks surfing a wave. |
+| 2026-10-14 | Mascot: glass V with sunglasses + swim trunks surfing a wave (v4 approved). |
+| 2026-10-14 | Window overview = 3D flip-through (Flip 3D-style). |
+| 2026-10-14 | Fonts: rounded and friendly (Nunito/Quicksand spirit). |
+| 2026-10-14 | First fork: System Settings (design showcase). |
+| 2026-10-14 | Forked apps get full layout rethinks, not just themes. |
+| 2026-10-14 | One system-wide accent color. |
+| 2026-10-14 | Alt+Tab = glass card strip. |

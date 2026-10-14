@@ -1,0 +1,26 @@
+# Build outputs
+target/
+build/
+output-*/
+*.o
+*.a
+*.so
+*.dylib
+
+# Editor / OS noise
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# CMake / Ninja
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+build.ninja
+.ninja_*
+
+# Misc
+*.log
+*.tmp

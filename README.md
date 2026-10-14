@@ -8,8 +8,8 @@ never shipped, reimagined.*
 
 - **Vitrum Shell** — built from scratch: a Wayland compositor plus the
   desktop shell (panel, launcher, window management with real glass/blur,
-  lock screen, wallpaper engine). Recommended stack: Rust + Smithay for the
-  compositor, Qt 6 / QML for the shell.
+  lock screen, wallpaper engine). Tech stack: wlroots (C++) compositor +
+  Qt 6 / QML shell.
 - **Vitrum Apps** — forked from proven open-source apps and restyled in the
   Vitrum design language. Forking beats rewriting: we get stability for free
   and spend our design budget on the look and feel.

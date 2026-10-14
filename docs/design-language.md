@@ -67,9 +67,11 @@ final call still pending.
 - **Login screen: XP welcome-screen layout, aero'ified** — DECIDED
   (2026-10-14). User tiles as frosted-glass cards on the right, branding on
   the left, theme backdrop (underwater/beach).
-- **Boot splash / mascot** — DECIDED (2026-10-14): a glass "V" wearing
-  sunglasses and swim trunks, surfing a wave. The Vitrum mascot. (Mockup in
-  files/: vitrum-mascot.)
+- **Boot splash / mascot** — DECIDED (2026-10-14): **Raiden's hand-drawn
+  V** — flat vector style: yellow V with black edge, black oval sunglasses,
+  orange swim trunks, little stick arms, standing on a green surfboard.
+  The glossy AI render is NOT the direction; the mascot is his drawing,
+  cleaned up. (Assets in files/: vitrum-mascot.svg + preview PNG.)
 
 ## 7. Iconography & typography
 

@@ -29,6 +29,19 @@ never shipped, reimagined.*
 
 Phase 0 — design. See `docs/` as it fills in.
 
+## Building (Phase 1a)
+
+Dependencies: Qt 6, CMake 3.21+, Ninja, LayerShellQt, Wayland dev
+libraries (`libwayland-dev`, `wayland-protocols`).
+
+```sh
+cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+cmake --build build
+```
+
+The shell components are layer-shell clients — run them on labwc or Sway
+until the Vitrum compositor lands in Phase 1b.
+
 ## License
 
 GPL-3.0. See LICENSE.

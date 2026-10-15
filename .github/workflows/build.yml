@@ -11,13 +11,14 @@ jobs:
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
         with:
-          version: '6.8.2'
+          version: '6.11.2'
+          modules: 'qtwayland'
 
       - name: Install build dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y cmake ninja-build extra-cmake-modules \
-            libwayland-dev wayland-protocols
+            libwayland-dev wayland-protocols libxkbcommon-dev
 
       - name: Build layer-shell-qt
         run: |

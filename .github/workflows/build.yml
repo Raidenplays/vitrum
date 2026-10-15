@@ -13,6 +13,8 @@ jobs:
         with:
           version: '6.11.2'
           modules: 'qtwayland'
+          # Default aqtinstall v3.3.0 can't handle Qt 6.11; use a newer build
+          aqtsource: 'git+https://github.com/miurahr/aqtinstall.git@076e1659807d0b362a3ed684d54c2e9c775eb9c7'
 
       - name: Install build dependencies
         run: |

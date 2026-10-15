@@ -12,7 +12,9 @@ jobs:
         uses: jurplel/install-qt-action@v4
         with:
           version: '6.8.2'
-          modules: 'qtwayland'
+          # Qt renamed the linux arch in its repo metadata (gcc_64 -> linux_gcc_64);
+          # aqtinstall only finds the packages with the new name
+          arch: 'linux_gcc_64'
 
       - name: Install build dependencies
         run: |

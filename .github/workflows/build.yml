@@ -1,12 +1,15 @@
 name: build
 
+
 on: [push, pull_request]
+
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
@@ -16,11 +19,24 @@ jobs:
           # aqtinstall only finds the packages with the new name
           arch: 'linux_gcc_64'
 
+
       - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y cmake ninja-build extra-cmake-modules \
+          sudo apt-get install -y cmake ninja-build \
             libwayland-dev wayland-protocols libxkbcommon-dev
+
+
+      - name: Build extra-cmake-modules from source
+        run: |
+          # Ubuntu's extra-cmake-modules package is too old for layer-shell-qt v6.4.0,
+          # so build a newer release from source instead
+          git clone --depth 1 https://invent.kde.org/frameworks/extra-cmake-modules.git
+          cmake -S extra-cmake-modules -B build-ecm \
+            -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release
+          cmake --build build-ecm
+          sudo cmake --install build-ecm
+
 
       - name: Build layer-shell-qt
         run: |
@@ -32,8 +48,10 @@ jobs:
           cmake --build build-lsq
           sudo cmake --install build-lsq
 
+
       - name: Configure
         run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+
 
       - name: Build
         run: cmake --build build
